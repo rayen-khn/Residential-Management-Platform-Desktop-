@@ -4,6 +4,10 @@ target/
 installer-output/
 sentiment_analysis_api/
 
+config/application.local.properties
+src/main/resources/google_drive_credentials.json
+src/main/resources/client_secret_*.json
+
 
 # Local bundled JDK (can be re-downloaded/reinstalled on each machine)
 tools/jdk-25/
