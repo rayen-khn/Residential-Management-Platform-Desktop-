@@ -1,0 +1,9 @@
+# Large generated artifacts (GitHub push limit: 100MB per file)
+dist/
+target/
+installer-output/
+sentiment_analysis_api/
+
+
+# Local bundled JDK (can be re-downloaded/reinstalled on each machine)
+tools/jdk-25/

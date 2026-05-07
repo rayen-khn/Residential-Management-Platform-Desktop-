@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Verify Syndicati Compile",
+			"type": "shell",
+			"command": ".\\tools\\maven\\bin\\mvn.cmd",
+			"args": [
+				"-q",
+				"-DskipTests",
+				"compile"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "Verify Namespace Compile Cmd",
+			"type": "shell",
+			"command": "cmd.exe",
+			"args": [
+				"/d",
+				"/c",
+				"set JAVA_HOME=c:\\Users\\amine\\OneDrive\\Desktop\\Syndicati_Java\\tools\\jdk-25 && set PATH=c:\\Users\\amine\\OneDrive\\Desktop\\Syndicati_Java\\tools\\jdk-25\\bin;c:\\Users\\amine\\OneDrive\\Desktop\\Syndicati_Java\\tools\\maven\\bin;%PATH% && .\\tools\\maven\\bin\\mvn.cmd -q -DskipTests compile && echo NAMESPACE_OK"
+			],
+			"isBackground": false
+		}
+	]
+}

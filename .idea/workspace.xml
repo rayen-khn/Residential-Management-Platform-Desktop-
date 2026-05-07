@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6b87a8d-8efa-4a60-acc9-8c473dca5fba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sentiment_analysis_api/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_analysis_api/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syndicati/controllers/syndicat/ReclamationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syndicati/controllers/syndicat/ReclamationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syndicati/models/forum/data/ReactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syndicati/models/forum/data/ReactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syndicati/models/syndicat/Reponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syndicati/models/syndicat/Reponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syndicati/services/dashboard/DashboardAdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syndicati/services/dashboard/DashboardAdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syndicati/services/forum/ReactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syndicati/services/forum/ReactionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syndicati/services/mail/SyndicatiEmailComposer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syndicati/services/mail/SyndicatiEmailComposer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syndicati/services/syndicat/ReponseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syndicati/services/syndicat/ReponseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syndicati/views/backend/dashboard/DashboardForumSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syndicati/views/backend/dashboard/DashboardForumSection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syndicati/views/backend/dashboard/DashboardSyndicatSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syndicati/views/backend/dashboard/DashboardSyndicatSection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syndicati/views/backend/dashboard/DashboardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syndicati/views/backend/dashboard/DashboardView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syndicati/views/frontend/profile/ProfileForumSectionEnhanced.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syndicati/views/frontend/profile/ProfileForumSectionEnhanced.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syndicati/views/frontend/profile/ProfileReclamationSectionEnhanced.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syndicati/views/frontend/profile/ProfileReclamationSectionEnhanced.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/syndicati/views/frontend/services/SyndicatPageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/syndicati/views/frontend/services/SyndicatPageView.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+    <option name="showPreview" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2sZrOpSAw6nj94L92dkR72JkyOe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MainProg.executor": "Run",
+    "Application.MainProgGUI.executor": "Run",
+    "Application.Syndicati.executor": "Run",
+    "Maven.javafx:run.executor": "Run",
+    "Maven.syndicati [clean].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.codeium.enabled": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "Forum",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/wamp64/www/ESPRIT-PIDEV-JAVA-3A53-2526-Syndicati",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\amine\OneDrive\Desktop\Syndicati_Java\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.syndicati.controllers" />
+      <recent name="com.esprit.services" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Maven.javafx:run">
+    <configuration name="Syndicati" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.syndicati.Launcher" />
+      <module name="syndicati" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="javafx:run" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="--quiet" />
+                <option value="javafx:run" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6b87a8d-8efa-4a60-acc9-8c473dca5fba" name="Changes" comment="" />
+      <created>1738673910713</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738673910713</updated>
+      <workItem from="1739112985491" duration="8790000" />
+      <workItem from="1739199851694" duration="496000" />
+      <workItem from="1739260217484" duration="3262000" />
+      <workItem from="1739271448030" duration="138000" />
+      <workItem from="1739271596905" duration="128000" />
+      <workItem from="1739271734244" duration="25000" />
+      <workItem from="1739732126728" duration="80000" />
+      <workItem from="1739732226122" duration="34000" />
+      <workItem from="1739732512713" duration="2173000" />
+      <workItem from="1739738850861" duration="9934000" />
+      <workItem from="1739779925916" duration="23372000" />
+      <workItem from="1739816935758" duration="8278000" />
+      <workItem from="1739826941397" duration="561000" />
+      <workItem from="1739869099018" duration="403000" />
+      <workItem from="1740955538998" duration="15650000" />
+      <workItem from="1740994510109" duration="18722000" />
+      <workItem from="1741032730695" duration="15758000" />
+      <workItem from="1741050283479" duration="1544000" />
+      <workItem from="1741076463486" duration="967000" />
+      <workItem from="1746470790707" duration="131000" />
+      <workItem from="1746950771632" duration="270000" />
+      <workItem from="1746997292706" duration="173000" />
+      <workItem from="1747387003029" duration="3594000" />
+      <workItem from="1760269818809" duration="31499000" />
+      <workItem from="1760526668782" duration="146000" />
+      <workItem from="1760731449322" duration="9314000" />
+      <workItem from="1760960474916" duration="1204000" />
+      <workItem from="1762245522950" duration="3613000" />
+      <workItem from="1762252807062" duration="1096000" />
+      <workItem from="1762253962107" duration="2702000" />
+      <workItem from="1762258808458" duration="2224000" />
+      <workItem from="1762850214546" duration="1884000" />
+      <workItem from="1762852679654" duration="234000" />
+      <workItem from="1762852925340" duration="8788000" />
+      <workItem from="1763022078057" duration="16135000" />
+      <workItem from="1768778819563" duration="728000" />
+      <workItem from="1768813512261" duration="3651000" />
+      <workItem from="1768817776770" duration="283000" />
+      <workItem from="1768818097035" duration="1290000" />
+      <workItem from="1768822835486" duration="2947000" />
+      <workItem from="1773319297025" duration="31229000" />
+      <workItem from="1774860126253" duration="10693000" />
+      <workItem from="1774899236937" duration="6183000" />
+      <workItem from="1774942039193" duration="1249000" />
+      <workItem from="1774944204428" duration="4953000" />
+      <workItem from="1775043128489" duration="9782000" />
+      <workItem from="1775112388895" duration="14144000" />
+      <workItem from="1775199645419" duration="4123000" />
+      <workItem from="1775204531492" duration="3810000" />
+      <workItem from="1775458294572" duration="11938000" />
+      <workItem from="1775545982016" duration="6000000" />
+      <workItem from="1775631202765" duration="12438000" />
+      <workItem from="1775808788826" duration="4791000" />
+      <workItem from="1775818747704" duration="579000" />
+      <workItem from="1776082600871" duration="461000" />
+      <workItem from="1776237311210" duration="9705000" />
+      <workItem from="1776326855371" duration="54003000" />
+      <workItem from="1778151452449" duration="2123000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,115 @@
+/* Global custom scrollbar skin for JavaFX ScrollPane/ListView controls */
+
+.root {
+    /* Fallback palette that remains readable in both dark and light backgrounds */
+    -sy-scroll-track: rgba(50, 58, 72, 0.34);
+    -sy-scroll-track-border: rgba(255, 255, 255, 0.22);
+    -sy-scroll-track-hover: rgba(60, 70, 86, 0.50);
+    -sy-scroll-thumb-top: #9a8bff;
+    -sy-scroll-thumb-bottom: #7664f5;
+    -sy-scroll-thumb-top-hover: #ad9fff;
+    -sy-scroll-thumb-bottom-hover: #8572fb;
+    -sy-scroll-thumb-top-pressed: #7e6cf2;
+    -sy-scroll-thumb-bottom-pressed: #6551e3;
+    -sy-scroll-thumb-border: rgba(255, 255, 255, 0.30);
+    -sy-scroll-thumb-shadow: rgba(0, 0, 0, 0.42);
+}
+
+/* Optional hooks if root style classes are used by views/themes */
+.root.dark-theme,
+.root.dark,
+.root.theme-dark {
+    -sy-scroll-track: rgba(255, 255, 255, 0.15);
+    -sy-scroll-track-border: rgba(255, 255, 255, 0.28);
+    -sy-scroll-track-hover: rgba(255, 255, 255, 0.22);
+    -sy-scroll-thumb-border: rgba(255, 255, 255, 0.36);
+    -sy-scroll-thumb-shadow: rgba(0, 0, 0, 0.58);
+}
+
+.root.light-theme,
+.root.light,
+.root.theme-light {
+    -sy-scroll-track: rgba(17, 24, 39, 0.14);
+    -sy-scroll-track-border: rgba(17, 24, 39, 0.28);
+    -sy-scroll-track-hover: rgba(17, 24, 39, 0.24);
+    -sy-scroll-thumb-border: rgba(255, 255, 255, 0.68);
+    -sy-scroll-thumb-shadow: rgba(17, 24, 39, 0.24);
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical,
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-padding: 3;
+    -fx-background-insets: 0;
+}
+
+.scroll-bar:vertical {
+    -fx-pref-width: 13;
+}
+
+.scroll-bar:horizontal {
+    -fx-pref-height: 13;
+}
+
+.scroll-bar .track {
+    -fx-background-color: -sy-scroll-track;
+    -fx-background-radius: 999px;
+    -fx-border-color: -sy-scroll-track-border;
+    -fx-border-radius: 999px;
+    -fx-border-width: 1;
+}
+
+.scroll-bar:hover .track,
+.scroll-pane:hover .scroll-bar .track {
+    -fx-background-color: -sy-scroll-track-hover;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: linear-gradient(
+        to bottom,
+        -sy-scroll-thumb-top,
+        -sy-scroll-thumb-bottom
+    );
+    -fx-background-radius: 999px;
+    -fx-background-insets: 1;
+    -fx-border-color: -sy-scroll-thumb-border;
+    -fx-border-width: 1;
+    -fx-border-radius: 999px;
+    -fx-effect: dropshadow(gaussian, -sy-scroll-thumb-shadow, 3, 0.20, 0, 1);
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: linear-gradient(
+        to bottom,
+        -sy-scroll-thumb-top-hover,
+        -sy-scroll-thumb-bottom-hover
+    );
+    -fx-effect: dropshadow(gaussian, -sy-scroll-thumb-shadow, 4, 0.25, 0, 1);
+}
+
+.scroll-bar .thumb:pressed {
+    -fx-background-color: linear-gradient(
+        to bottom,
+        -sy-scroll-thumb-top-pressed,
+        -sy-scroll-thumb-bottom-pressed
+    );
+    -fx-effect: dropshadow(gaussian, -sy-scroll-thumb-shadow, 2, 0.15, 0, 0);
+}
+
+/* Hide default arrow buttons for cleaner modern scrollbar */
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button,
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-padding: 0;
+    -fx-shape: "";
+    -fx-background-color: transparent;
+}

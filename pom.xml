@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.syndicati</groupId>
+    <artifactId>syndicati</artifactId>
+    <name>syndicati</name>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Keep all JavaFX modules on the same version as the runtime line -->
+        <javafx.version>25</javafx.version>
+        <!-- Security/compat: override vulnerable transitive versions -->
+        <protobuf.version>3.25.5</protobuf.version>
+    </properties>
+    
+    <dependencyManagement>
+        <dependencies>
+            <!-- mysql-connector-j 8.0.x brings an old protobuf; pin it to a patched version -->
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>${protobuf.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <dependencies>
+        <!-- MySQL Connector -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.4.0</version>
+        </dependency>
+        
+        <!-- JavaFX Dependencies - all using same version -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-web</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-swing</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        
+        <!-- JSON Processing -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20240303</version>
+        </dependency>
+        
+        <!-- Gson for JSON serialization -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+        
+        <!-- SLF4J binding to avoid "StaticLoggerBinder" no-op warnings -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>2.0.13</version>
+        </dependency>
+        
+        <!-- Web Scraping -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.17.2</version>
+        </dependency>
+        
+        <!-- HTTP Client -->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.12.0</version>
+        </dependency>
+
+        <!-- Password hashing/verification (compatible with Symfony bcrypt hashes) -->
+        <dependency>
+            <groupId>org.mindrot</groupId>
+            <artifactId>jbcrypt</artifactId>
+            <version>0.4</version>
+        </dependency>
+
+        <!-- SMTP mail sending -->
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>jakarta.mail</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+
+        <!-- PDF export -->
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+            <version>2.0.31</version>
+        </dependency>
+        
+        <!-- JavaCV core library -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv</artifactId>
+            <version>1.5.8</version>
+            <exclusions>
+                <!-- Prevent JavaCV from pulling an older JavaFX 17 graph -->
+                <exclusion>
+                    <groupId>org.openjfx</groupId>
+                    <artifactId>javafx-graphics</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.openjfx</groupId>
+                    <artifactId>javafx-base</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        
+        <!-- OpenCV for Windows x86_64 only -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>opencv</artifactId>
+            <version>4.6.0-1.5.8</version>
+            <classifier>windows-x86_64</classifier>
+        </dependency>
+        
+        <!-- javacpp for Windows x86_64 -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacpp</artifactId>
+            <version>1.5.8</version>
+            <classifier>windows-x86_64</classifier>
+        </dependency>
+        
+        <!-- Webcam Capture for real camera feed -->
+        <dependency>
+            <groupId>com.github.sarxos</groupId>
+            <artifactId>webcam-capture</artifactId>
+            <version>0.3.12</version>
+        </dependency>
+
+        <!-- Apache Commons for HTTP multipart uploads and utilities -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.14.0</version>
+        </dependency>
+
+        <!-- Google Drive API -->
+        <dependency>
+            <groupId>com.google.api-client</groupId>
+            <artifactId>google-api-client</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.oauth-client</groupId>
+            <artifactId>google-oauth-client-jetty</artifactId>
+            <version>1.34.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-drive</artifactId>
+            <version>v3-rev20220815-2.0.0</version>
+        </dependency>
+        
+        <!-- Testing -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>syndicati</finalName>
+        <plugins>
+            <!-- JavaFX Maven Plugin -->
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <mainClass>com.syndicati.Launcher</mainClass>
+                    <options>
+                        <option>--enable-native-access=ALL-UNNAMED</option>
+                        <option>--enable-native-access=javafx.graphics,javafx.media</option>
+                        <!-- Suppress sun.misc.Unsafe deprecation warnings from Guice 5.1.0 -->
+                        <option>--sun-misc-unsafe-memory-access=allow</option>
+                    </options>
+                </configuration>
+            </plugin>
+            
+            <!-- Exec Maven Plugin for running the app -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>com.syndicati.Launcher</mainClass>
+                </configuration>
+            </plugin>
+            
+            <!-- Maven Compiler Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+            
+            <!-- Maven JAR Plugin - create executable JAR -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.syndicati.Launcher</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            
+            <!-- Maven Shade Plugin - create fat JAR with all dependencies -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.5.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>com.syndicati.Launcher</mainClass>
+                                </transformer>
+                            </transformers>
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>module-info.class</exclude>
+                                        <exclude>META-INF/*.SF</exclude>
+                                        <exclude>META-INF/*.DSA</exclude>
+                                        <exclude>META-INF/*.RSA</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            
+            <!-- Maven Dependency Plugin - copy dependencies for Java packaging -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.6.0</version>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/libs</outputDirectory>
+                            <includeScope>runtime</includeScope>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
+
+
+
+
